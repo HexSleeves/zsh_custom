@@ -24,7 +24,7 @@ done
 # Make sure oh-my-zsh plugins are available
 : ${OMZ_SHA:=e7aa0c56e68348afefdd6af4c5bdb314a2bd6640}
 plugin bundle ohmyzsh/ohmyzsh kind:clone pin:$OMZ_SHA
-[[ -n "$ZSH" ]] || ZSH=$(antidote path ohmyzsh/ohmyzsh)
+[[ -n "$ZSH" ]] || ZSH=$(plugin path ohmyzsh/ohmyzsh)
 
 # Load plugins
 #local _zplugin _zplugin_name _zplugin_init loaded _zstart_ts
