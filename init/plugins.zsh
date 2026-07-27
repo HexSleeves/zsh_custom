@@ -4,7 +4,8 @@
 
 typeset -gU fpath path
 
-if zstyle -t ":zsh_custom:antidote" use-antibody; then
+zstyle ":zsh_custom:plugins" use-antibody true
+if zstyle -t ":zsh_custom:plugins" use-antibody; then
   if ! (( $+commands[antibody] )); then
     path=(/opt/homebrew/bin(N) $path)
   fi
@@ -15,10 +16,14 @@ if zstyle -t ":zsh_custom:antidote" use-antibody; then
   fi
 
   source <(antibody init)
-  function antidote() {
+  function plugin() {
     antibody "$@"
   }
 else
+  #source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
   source $HOME/Projects/mattmc3/antidote/antidote.zsh
   source <(antidote init)
+  function plugin() {
+    antidote "$@"
+  }
 fi

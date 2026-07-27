@@ -2,10 +2,10 @@
 # clipboard: Add clipboard utils.
 #
 
-# antidote bundle ohmyzsh/ohmyzsh path:lib/clipboard.zsh pin:${OMZ_SHA}
-# antidote bundle ohmyzsh/ohmyzsh path:plugins/copybuffer pin:${OMZ_SHA}
-# antidote bundle ohmyzsh/ohmyzsh path:plugins/copyfile pin:${OMZ_SHA}
-# antidote bundle ohmyzsh/ohmyzsh path:plugins/copypath pin:${OMZ_SHA}
+# plugin bundle ohmyzsh/ohmyzsh path:lib/clipboard.zsh pin:${OMZ_SHA}
+# plugin bundle ohmyzsh/ohmyzsh path:plugins/copybuffer pin:${OMZ_SHA}
+# plugin bundle ohmyzsh/ohmyzsh path:plugins/copyfile pin:${OMZ_SHA}
+# plugin bundle ohmyzsh/ohmyzsh path:plugins/copypath pin:${OMZ_SHA}
 
 #
 # clipboard: Add clipboard utils.

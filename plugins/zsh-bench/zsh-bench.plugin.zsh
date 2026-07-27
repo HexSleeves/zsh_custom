@@ -1,1 +1,1 @@
-antidote bundle romkatv/zsh-bench kind:path
+plugin bundle romkatv/zsh-bench kind:path
